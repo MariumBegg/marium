@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <title>Quiz</title>
+    <link rel= "stylesheet" href= "../css/page3.css">
+    <meta name= "viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../JS/app.js"></script>
+</head>
+
+<body>
+
+    <nav>
+        <ul class="navList">
+          <li><a href="../index.html" target="_blank">Homepage</a></li>
+          <li><a href= "../pages/page2.html" target="_blank">About Me</a></li>
+        </ul>
+      </nav>
+
+    <header>
+        <h1>How well do you know the Middle East?</h1>
+    </header>
+
+   
+
+    <h3>The Middle East is always on the news these days, but ironically, not many people know much about it!</h>
+    <h4>Test your knowledge of this region below...</h4>
+
+
+    <div class= "Middle East Quiz">
+        
+        <form id= "quiz" name= "quiz">
+            <p class="questions">Which of the following is not a Middle Eastern country?</p>
+                <br>
+                <input type="radio" id="Qs" name="question1" value="Yemen">
+                Yemen
+                <br>
+                <input type="radio" id="Qs" name="question1" value="Iran">
+                Iran
+                <br>
+                <input type="radio" id="Qs" name="question1" value="Turkey">
+                Turkey
+                <br>
+                <input type="radio" id="Qs" name="question1" value="Turkmenistan">
+                Turkmenistan
+                <br>
+
+            <p class="questions"> What is the most widely spoken language in the Middle East??</p>
+                <br>
+                <input id="textbox" type="text" name="question2">
+                <br>
+
+            <p class="questions"> Where is the Middle East located?</p>
+                <br>
+                <input type="radio" id="Qs" name="question3" value="North Africa">
+                North Africa
+                <br>
+                <input type="radio" id="Qs" name="question3" value="Southeast Asia">
+                Southeast Asia
+                <br>
+                <input type="radio" id="Qs" name="question3" value="Central Asia">
+                Central Asia
+                <br>
+                <input type="radio" id="Qs" name="question3" value="A transcontinental region connecting Western Asia with North Africa">
+                A transcontinental region connecting Western Asia with North Africa
+                <br> 
+               
+
+            <input id="button" type="button" value="I'm finished!" onclick="check();">
+        </form>
+
+        <div id="after_submit"> 
+            <p id="number_correct"></p> 
+            <p id="message"></p>
+            <img id="picture">
+        </div>
+        
+
+    </div>
+</body>
+</html>
